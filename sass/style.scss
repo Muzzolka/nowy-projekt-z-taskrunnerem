@@ -1,27 +1,26 @@
 /*Global*/
-$main-font: Signika;
+$main-font: 'Signika';
+$second-font: 'Inconsolata';
+$brand-font: 'Leckerli One', cursive;
 $color-white: #ffffff;
+$brand-color: #ffff00;
 
-.header .container {
-    margin: 0;
-    padding: 0;
-    position: relative;
+.header {
+    background-image: url("https://i.postimg.cc/LXxFVsbs/pexels-photo-355988.jpg");
+    background-size: cover;
+    height: 100%;
     width: 100%;
-    .background-image {
-        position: absolute;
-        width: 100%;
-        object-fit: cover;
-        padding: 0;
-        margin: 0;
-    }
 }
 /* Navbar */
 nav {
-    position: absolute;
-    width: 100%;
-    padding:20px;
+    padding: 20px;
     font-family: $main-font;
     color: $color-white;
+    .navbar-brand {
+        font-family: $brand-font;
+        font-size: 30px;
+        color: $brand-color;
+    }
     .first-level-menu {
         justify-content: space-between;
     }
@@ -30,7 +29,17 @@ nav {
 /*Welcome*/
 
 .header-inner {
-    position: absolute;
-    margin: 40%;
+    max-height: 700px;
+    margin-top: 225px;
+    margin-bottom: 200px;
+    font-family: $second-font;
+    text-align: center;
     color: $color-white;
+    h1 {
+        font-size: 70px;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 30px;
+    }
 }
