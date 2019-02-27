@@ -1,14 +1,17 @@
 /*Global*/
-.header {
-  background-image: url("https://i.postimg.cc/LXxFVsbs/pexels-photo-355988.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%; }
+body {
+  font-family: "Cousine", monospace; }
+  body section {
+    margin-bottom: 100px; }
+
+p {
+  font-family: "Merriweather", serif;
+  color: #707070;
+  font-size: 15px; }
 
 /* Navbar */
 nav {
   padding: 20px;
-  font-family: "Signika";
   color: #ffffff; }
   nav .navbar-brand {
     font-family: "Leckerli One", cursive;
@@ -19,16 +22,80 @@ nav {
         justify-content: space-between; }
 
 /*Welcome*/
-.header-inner {
-  max-height: 700px;
-  margin-top: 225px;
-  margin-bottom: 200px;
-  font-family: "Inconsolata";
+.header {
+  background-image: url("https://i.postimg.cc/LXxFVsbs/pexels-photo-355988.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+  .header .header-inner {
+    max-height: 700px;
+    margin-top: 225px;
+    margin-bottom: 200px;
+    text-align: center;
+    color: #ffffff; }
+    .header .header-inner h1 {
+      font-size: 70px;
+      font-weight: 600; }
+    .header .header-inner h2 {
+      font-family: "Merriweather", serif;
+      font-size: 30px; }
+    .header .header-inner button {
+      background: #ffff00;
+      border: #ffff00;
+      color: #ffffff;
+      height: 70px;
+      width: 230px;
+      font-size: 20px;
+      font-weight: 600; }
+
+/*Portofolio&Services*/
+.title-main {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
   text-align: center;
-  color: #ffffff; }
-  .header-inner h1 {
-    font-size: 70px;
-    font-weight: 600; }
-  .header-inner h2 {
-    font-size: 30px; }
+  font-size: 30px;
+  margin-bottom: 50px; }
+
+.cards {
+  -ms-flex: 0 0 33%;
+      flex: 0 0 33%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px; }
+  .cards img {
+    width: 300px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .cards i {
+    color: #ffff00;
+    font-size: 40px;
+    background: #ffffff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffff00; }
+
+/*Footer*/
+.footer .col-3 {
+  color: #707070;
+  font-size: 15px; }
+
+.footer .col-9 {
+  padding-left: 20%; }
+  .footer .col-9 .fab {
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    background: #000000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%; }
 /*# sourceMappingURL=style.css.map */
